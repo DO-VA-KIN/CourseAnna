@@ -1,0 +1,93 @@
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\bin\Debug\CurseAnna.exe.config
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\bin\Debug\CurseAnna.exe
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\bin\Debug\CurseAnna.pdb
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\MainWindow.g.cs
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\App.g.cs
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\CurseAnna_MarkupCompile.cache
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\CurseAnna_MarkupCompile.lref
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\MainWindow.baml
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\CurseAnna.g.resources
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\CurseAnna.Properties.Resources.resources
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.GenerateResource.cache
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\CurseAnna.exe
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\CurseAnna.pdb
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\Controls\PBRoad.g.cs
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\Controls\PBRoad.baml
+C:\Users\Alex\source\repos\CurseAnna\CurseAnna\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.exe.config
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.exe
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.pdb
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csprojAssemblyReference.cache
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\Controls\PBRoad.g.cs
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\MainWindow.g.cs
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\App.g.cs
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna_MarkupCompile.cache
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna_MarkupCompile.lref
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\Controls\PBRoad.baml
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\MainWindow.baml
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.g.resources
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.Properties.Resources.resources
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.GenerateResource.cache
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.CoreCompileInputs.cache
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.exe
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.pdb
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.exe.config
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.exe
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.pdb
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csprojAssemblyReference.cache
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\Controls\PBRoad.g.cs
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\MainWindow.g.cs
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\App.g.cs
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna_MarkupCompile.cache
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna_MarkupCompile.lref
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\Controls\PBRoad.baml
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\MainWindow.baml
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.g.resources
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.Properties.Resources.resources
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.GenerateResource.cache
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.CoreCompileInputs.cache
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.exe
+H:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.pdb
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.exe.config
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.exe
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.pdb
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.AssemblyReference.cache
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.SuggestedBindingRedirects.cache
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\Controls\PBRoad.g.cs
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\MainWindow.g.cs
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\App.g.cs
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\GeneratedInternalTypeHelper.g.cs
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna_MarkupCompile.cache
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna_MarkupCompile.lref
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\Controls\PBRoad.baml
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\MainWindow.baml
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.g.resources
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.Properties.Resources.resources
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.GenerateResource.cache
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.CoreCompileInputs.cache
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.exe
+B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.pdb
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.exe.config
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.exe
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\bin\Debug\CurseAnna.pdb
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.AssemblyReference.cache
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.SuggestedBindingRedirects.cache
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\Controls\PBRoad.g.cs
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\MainWindow.g.cs
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\App.g.cs
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna_MarkupCompile.cache
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna_MarkupCompile.lref
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\Controls\PBRoad.baml
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\MainWindow.baml
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.g.resources
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.Properties.Resources.resources
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.GenerateResource.cache
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.csproj.CoreCompileInputs.cache
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.exe
+E:\mainProgs\university\Wpf\CurseAnna\CurseAnna\obj\Debug\CurseAnna.pdb
