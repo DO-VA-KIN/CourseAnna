@@ -1,13 +1,15 @@
 <?xml version="1.0"?>
 <SettingsS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <HorseCount>5</HorseCount>
-  <MaxSpeed>15</MaxSpeed>
+  <MaxSpeed>20</MaxSpeed>
   <MinSpeed>10</MinSpeed>
   <Bets>
+    <unsignedInt>0</unsignedInt>
     <unsignedInt>100</unsignedInt>
     <unsignedInt>200</unsignedInt>
     <unsignedInt>1000</unsignedInt>
     <unsignedInt>2500</unsignedInt>
+    <unsignedInt>5000</unsignedInt>
   </Bets>
-  <Balance>150</Balance>
+  <Balance>15</Balance>
 </SettingsS>

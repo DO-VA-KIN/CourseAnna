@@ -335,13 +335,13 @@ namespace CurseAnna
         private void TBSetStartBalance_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (TBSetStartBalance.Text == "")
-                Balance = 0;
+                Settings1.Values.Balance = 0;
             else
             {
                 try { Settings1.Values.Balance = Convert.ToInt32(TBSetStartBalance.Text); }
                 catch { }
             }
-            TBBalance.Text = Settings1.Values.Balance.ToString();
+            TBSetStartBalance.Text = Settings1.Values.Balance.ToString();
         }
 
         private void BtnSetDefault_Click(object sender, RoutedEventArgs e)
@@ -373,11 +373,15 @@ namespace CurseAnna
             {
                 foreach (TextBox item in LBSetBets.Items)
                 {
-                    uint val = Convert.ToUInt32(item.Text);
+                    uint val;
+                    if (item.Text == "")
+                        val = 0;
+                    else val = Convert.ToUInt32(item.Text);
+
                     if (!bets.Contains(val))
                         bets.Add(val);
                 }
-
+                bets.Sort();
             }
             catch
             {
