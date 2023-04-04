@@ -7,16 +7,10 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CurseAnna
 {
@@ -33,6 +27,8 @@ namespace CurseAnna
         Controls.PBRoad[] PBHorses;
         Label[] LHorses;
         Game[] Games;
+
+        private MediaPlayer Player = new MediaPlayer();// плеер
 
         public MainWindow()
         {
@@ -132,6 +128,12 @@ namespace CurseAnna
                     Games[i] = new Game(PBHorses[i], LHorses[i], Settings1.Values.MinSpeed, Settings1.Values.MaxSpeed, i);
                     Games[i].EndGame += EndGame;//подписываемся на события завершения 
                 }
+
+                if (File.Exists(Environment.CurrentDirectory + @"\Sound.mp3"))//если есть звуковой файл - он будет воспроизведен
+                {
+                    Player.Open(new Uri(Environment.CurrentDirectory + @"\Sound.mp3"));
+                    Player.Play();
+                }
                 BtnPlay.Tag = 1;
                 LHorse.Content = " -Победитель- ";
                 BtnPlay.Content = "Покинуть трибуны";
@@ -150,6 +152,7 @@ namespace CurseAnna
                 }
                 Games = null;
 
+                Player.Close();
                 BtnPlay.Tag = 0;
                 BtnPlay.Content = "Играть";
                 BtnPlay.ToolTip = null;
@@ -158,7 +161,7 @@ namespace CurseAnna
                 TISettings.IsEnabled = true;
                 BtnSave.IsEnabled = true;
 
-                MessageBox.Show("Вы проиграли!\n-" + Convert.ToInt32(CBBet.SelectedItem));
+                new Controls.DialogWindow("Вы проиграли!\n-" + Convert.ToInt32(CBBet.SelectedItem), 0).ShowDialog();
                 Balance -= Convert.ToInt32(CBBet.SelectedItem);
                 TBBalance.Text = Balance.ToString();
             }
@@ -184,12 +187,12 @@ namespace CurseAnna
                 LHorse.Content = Horses[num] + " " + LHorse.Content;
                 if (num == CBHorse.SelectedIndex)
                 {
-                    MessageBox.Show("Вы выиграли!\n+" + Convert.ToInt32(CBBet.SelectedItem));
+                    new Controls.DialogWindow("Вы выиграли!\n+" + Convert.ToInt32(CBBet.SelectedItem), 0).ShowDialog();
                     Balance += Convert.ToInt32(CBBet.SelectedItem);
                 }
                 else
                 {
-                    MessageBox.Show("Вы проиграли!\n-" + Convert.ToInt32(CBBet.SelectedItem));
+                    new Controls.DialogWindow("Вы проиграли!\n-" + Convert.ToInt32(CBBet.SelectedItem), 0).ShowDialog();
                     Balance -= Convert.ToInt32(CBBet.SelectedItem);
                 }
                 TBBalance.Text = Balance.ToString();
@@ -204,6 +207,7 @@ namespace CurseAnna
                 CBHorse.IsEnabled = true;
                 TISettings.IsEnabled = true;
                 BtnSave.IsEnabled = true;
+                Player.Close();
                 //Games = null;
             }
 
@@ -214,7 +218,7 @@ namespace CurseAnna
         {
             if (Games == null)
             {
-                MessageBox.Show("Нечего сохранять...");
+                new Controls.DialogWindow("Нечего сохранять...", 0).ShowDialog();
                 return;
             }
             //wpf класс для выбора директории сохранения
@@ -288,7 +292,7 @@ namespace CurseAnna
         private void Window_Closed(object sender, EventArgs e)
         {
             if (Convert.ToInt32(TBBalance.Text) < 0)
-                MessageBox.Show("Эй, ты нам денег должен!");
+                new Controls.DialogWindow("Эй, ты нам денег должен!", 0).ShowDialog();
         }
 
 
@@ -348,9 +352,9 @@ namespace CurseAnna
         {
             Settings1.SetDefault();
             if (!Settings1.Save())
-                MessageBox.Show("Не удалось сохранить O_o" +
+                new Controls.DialogWindow("Не удалось сохранить O_o" +
                     "\nСкорее всего файл настроек используется другим процессом или был изменен." +
-                    "\nРекомендуемые действия - удаление файла настроек");
+                    "\nРекомендуемые действия - удаление файла настроек", 0).ShowDialog();
             Window_Loaded(null, null);
         }
 
@@ -364,8 +368,9 @@ namespace CurseAnna
 
             if (minSpeed >= maxSpeed)
             {
-                MessageBox.Show("Скорости лошадей должны отличаться!" +
-                    "\nПричем, минимальная скорость должна быть меньше максимальной");
+                new Controls.DialogWindow("Скорости лошадей должны отличаться!" +
+                    "\nПричем, минимальная скорость должна быть меньше максимальной", 0).ShowDialog();
+
                 return;
             }
 
@@ -385,9 +390,8 @@ namespace CurseAnna
             }
             catch
             {
-
-                MessageBox.Show("Воу, Воу, Воу -" +
-                    "\nСтавки слишком высоки!");
+                new Controls.DialogWindow("Воу, Воу, Воу -" +
+                    "\nСтавки слишком высоки!", 0).ShowDialog();
                 return;
             }
 
@@ -397,9 +401,9 @@ namespace CurseAnna
             Settings1.Values.Balance = balance;
             Settings1.Values.Bets = bets;
             if (!Settings1.Save())
-                MessageBox.Show("Не удалось сохранить O_o" +
+                new Controls.DialogWindow("Не удалось сохранить O_o" +
                     "\nСкорее всего файл настроек используется другим процессом или был изменен." +
-                    "\nРекомендуемые действия - удаление файла настроек");
+                    "\nРекомендуемые действия - удаление файла настроек", 0).ShowDialog();
             Window_Loaded(null, null);
         }
     }

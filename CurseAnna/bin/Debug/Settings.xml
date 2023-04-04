@@ -4,12 +4,12 @@
   <MaxSpeed>20</MaxSpeed>
   <MinSpeed>10</MinSpeed>
   <Bets>
-    <unsignedInt>0</unsignedInt>
     <unsignedInt>100</unsignedInt>
     <unsignedInt>200</unsignedInt>
+    <unsignedInt>500</unsignedInt>
     <unsignedInt>1000</unsignedInt>
     <unsignedInt>2500</unsignedInt>
     <unsignedInt>5000</unsignedInt>
   </Bets>
-  <Balance>15</Balance>
+  <Balance>20000</Balance>
 </SettingsS>

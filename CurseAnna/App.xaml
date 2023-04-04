@@ -4,6 +4,17 @@
              xmlns:local="clr-namespace:CurseAnna"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes\TabControl.xaml"/>
+                <ResourceDictionary Source="Themes\TabItem.xaml"/>
+                <ResourceDictionary Source="Themes\Button.xaml"/>
+                <ResourceDictionary Source="Themes\GroupBox.xaml"/>
+                <ResourceDictionary Source="Themes\TextBox.xaml"/>
+                <ResourceDictionary Source="Themes\ComboBox.xaml"/>
+                <ResourceDictionary Source="Themes\Menu.xaml"/>
+                <ResourceDictionary Source="Themes\ToolTip.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

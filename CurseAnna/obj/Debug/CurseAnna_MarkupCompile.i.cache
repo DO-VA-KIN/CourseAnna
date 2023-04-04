@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-B:\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\obj\Debug\
 CurseAnna
 none
 false
 DEBUG;TRACE
-B:\Projects\university\Wpf\CurseAnna\CurseAnna\App.xaml
-2-1845880563
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\App.xaml
+111930297516
 
-92005008078
-13-1310406943
-Controls\PBRoad.xaml;MainWindow.xaml;
+13277477559
+13-1505183044
+Controls\DialogWindow.xaml;Controls\PBRoad.xaml;MainWindow.xaml;Themes\Button.xaml;Themes\ComboBox.xaml;Themes\GroupBox.xaml;Themes\Menu.xaml;Themes\TabControl.xaml;Themes\TabItem.xaml;Themes\TextBox.xaml;Themes\ToolTip.xaml;
 
 False
 

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\pressF\Documents\Visual Studio 2017\Projects\university\Wpf\CurseAnna\CurseAnna\App.xaml
-21897421760
+111930297516
 
-8-1420869348
+9-706625746
 13-1505183044
-Controls\PBRoad.xaml;MainWindow.xaml;
+Controls\DialogWindow.xaml;Controls\PBRoad.xaml;MainWindow.xaml;Themes\Button.xaml;Themes\ComboBox.xaml;Themes\GroupBox.xaml;Themes\Menu.xaml;Themes\TabControl.xaml;Themes\TabItem.xaml;Themes\TextBox.xaml;Themes\ToolTip.xaml;
 
 False
 
