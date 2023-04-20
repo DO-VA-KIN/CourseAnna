@@ -9,6 +9,7 @@ namespace CurseAnna.Classes
 {
     public struct SettingsS
     {
+        public UInt16 Volume;
         public UInt16 HorseCount;
         public UInt16 MaxSpeed;
         public UInt16 MinSpeed;        
@@ -57,6 +58,7 @@ namespace CurseAnna.Classes
         {
             Values = new SettingsS
             {
+                Volume = 50,
                 HorseCount = 5,
                 MaxSpeed = 20,
                 MinSpeed = 10,

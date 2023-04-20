@@ -11,6 +11,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Threading;
 
 namespace CurseAnna
 {
@@ -30,6 +31,23 @@ namespace CurseAnna
 
         private MediaPlayer Player = new MediaPlayer();// плеер
 
+        private uint TimerNum = 0;
+        private DispatcherTimer Timer = new DispatcherTimer { Interval = new TimeSpan(0, 0, 1) };
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (BHorses[TimerNum].Opacity == 0.5)
+            {
+                BHorses[TimerNum].Opacity = 1;
+                PBHorses[TimerNum].Opacity = 1;
+            }
+            else
+            {
+                BHorses[TimerNum].Opacity = 0.5;
+                PBHorses[TimerNum].Opacity = 0.5;
+            }
+        }
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -38,9 +56,13 @@ namespace CurseAnna
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Settings1 = new Settings();
+            Timer.Tick += Timer_Tick;
+
             Balance = Settings1.Values.Balance;
             TBBalance.Text = Balance.ToString();//вкладка настройки
             TBSetStartBalance.Text = Balance.ToString();
+            SVolume.Value = Settings1.Values.Volume;
+
             BHorses = new Border[5] { BHorseRed, BHorseBlue, BHorseGreen, BHorsePurple, BHorseYellow };
             PBHorses = new Controls.PBRoad[5] { PBHorseRed, PBHorseBlue, PBHorseGreen, PBHorsePurple, PBHorseYellow };
             LHorses = new Label[5] { LHorseRed, LHorseBlue, LHorseGreen, LHorsePurple, LHorseYellow };
@@ -124,7 +146,9 @@ namespace CurseAnna
             {
                 Games = new Game[Settings1.Values.HorseCount];
                 for (int i = 0; i < Games.Length; i++)
-                { 
+                {
+                    if (i == CBHorse.SelectedIndex)
+                        TimerNum = (UInt16)i;
                     Games[i] = new Game(PBHorses[i], LHorses[i], Settings1.Values.MinSpeed, Settings1.Values.MaxSpeed, i);
                     Games[i].EndGame += EndGame;//подписываемся на события завершения 
                 }
@@ -135,6 +159,7 @@ namespace CurseAnna
                     Player.Play();
                 }
                 BtnPlay.Tag = 1;
+                Timer.Start();
                 LHorse.Content = " -Победитель- ";
                 BtnPlay.Content = "Покинуть трибуны";
                 BtnPlay.ToolTip = "Автоматическое поражение!";
@@ -154,6 +179,9 @@ namespace CurseAnna
 
                 Player.Close();
                 BtnPlay.Tag = 0;
+                Timer.Stop();
+                BHorses[TimerNum].Opacity = 1;
+                PBHorses[TimerNum].Opacity = 1;
                 BtnPlay.Content = "Играть";
                 BtnPlay.ToolTip = null;
                 CBBet.IsEnabled = true;
@@ -299,6 +327,12 @@ namespace CurseAnna
 
 
         //НАСТРОЙКИ
+        private void SVolume_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            SVolume.SelectionEnd = SVolume.Value;
+            Player.Volume = SVolume.Value/100;
+        }
+
         private void LBDelItem_Click(object sender, RoutedEventArgs e)
         {
             List<TextBox> list = new List<TextBox>(LBSetBets.SelectedItems.Count);
@@ -395,6 +429,7 @@ namespace CurseAnna
                 return;
             }
 
+            Settings1.Values.Volume = Convert.ToUInt16(SVolume.Value);
             Settings1.Values.HorseCount = horseCount;
             Settings1.Values.MaxSpeed = maxSpeed;
             Settings1.Values.MinSpeed = minSpeed;
@@ -406,5 +441,7 @@ namespace CurseAnna
                     "\nРекомендуемые действия - удаление файла настроек", 0).ShowDialog();
             Window_Loaded(null, null);
         }
+
+
     }
 }

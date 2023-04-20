@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CurseAnna" xmlns:controls="clr-namespace:CurseAnna.Controls"
         mc:Ignorable="d"
-        Title="Добро пожаловать на Ипподром" FontSize="14" Background="Gray" Height="500" Width="700" Loaded="Window_Loaded" Closed="Window_Closed" Icon="/Images/Horse.ico">
+        Title="Добро пожаловать на Ипподром" FontSize="14" Background="Gray" Height="550" Width="800" Loaded="Window_Loaded" Closed="Window_Closed" Icon="/Images/Horse.ico">
     <Grid>
         <TabControl Grid.ColumnSpan="2" Background="AliceBlue">
             <TabItem Width="100" Header="Игра">
@@ -93,12 +93,17 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="2*" MaxHeight="200"/>
-                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="1.5*" MaxHeight="150"/>
+                        <RowDefinition Height="2.5*" MaxHeight="200"/>
+                        <RowDefinition Height="5*"/>
                         <RowDefinition Height="1*" MaxHeight="150"/>
                     </Grid.RowDefinitions>
 
-                    <GroupBox Header="Лошади" MaxHeight="150" Margin="10,5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                    <GroupBox Header="Звук" MaxHeight="100" Margin="10,5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                        <Slider x:Name="SVolume" Minimum="0" Maximum="100" Value="50" SelectionEnd="50" SelectionStart="0" IsMoveToPointEnabled="True" IsSnapToTickEnabled="True" TickFrequency="1" IsSelectionRangeEnabled="true" SmallChange="1" ValueChanged="SVolume_ValueChanged"/>
+                    </GroupBox>
+
+                    <GroupBox Header="Лошади" MaxHeight="150" Margin="10,5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
@@ -135,7 +140,7 @@
                         </Grid>
                     </GroupBox>
 
-                    <GroupBox Header="Ставки" Margin="10,5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                    <GroupBox Header="Ставки" Margin="10,5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="70"/>
