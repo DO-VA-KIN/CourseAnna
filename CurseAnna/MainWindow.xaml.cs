@@ -320,10 +320,10 @@ namespace CurseAnna
 
 
         //закрытие окна - пасхалка
-        private void Window_Closed(object sender, EventArgs e)
+        private void Window_Closing(object sender, EventArgs e)
         {
             if (Convert.ToInt32(TBBalance.Text) < 0)
-                new Controls.DialogWindow("Эй, ты нам денег должен!", 0).ShowDialog();
+                new Controls.DialogWindow("Эй, ты нам денег должен!", 5).Show();
         }
 
 

@@ -10,9 +10,10 @@
         <GroupBox x:Name="GBForm" Header="---">
             <Grid>
                 <TextBlock x:Name="TBMessage" Background="AliceBlue" Foreground="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,30" TextWrapping="Wrap" Text="Да..., а может быть и нет...." FontFamily="Times New Roman" FontSize="15"/>
-                <Button x:Name="BtnYes" Content="Да" Height="22" Width="50" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Visible" Margin="0,0,50,3" Click="BtnYes_Click"/>
-                <Button x:Name="BtnNo" Content="Нет" Height="22" Width="50" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Visible" Margin="50,0,0,3" Click="BtnNo_Click"/>
+                <Button x:Name="BtnYes" Content="Да" Height="22" Width="50" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Collapsed" Margin="0,0,50,3" Click="BtnYes_Click"/>
+                <Button x:Name="BtnNo" Content="Нет" Height="22" Width="50" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Collapsed" Margin="50,0,0,3" Click="BtnNo_Click"/>
                 <Button x:Name="BtnOK" Content="ОК" Height="22" Width="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Collapsed" Margin="0,0,0,3" Click="BtnOK_Click"/>
+                <Label x:Name="LTimer" Content="-" Height="25" Width="auto" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Collapsed" Margin="0,0,0,3"/>
             </Grid>
         </GroupBox>
 

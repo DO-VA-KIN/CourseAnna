@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CurseAnna" xmlns:controls="clr-namespace:CurseAnna.Controls"
         mc:Ignorable="d"
-        Title="Добро пожаловать на Ипподром" FontSize="14" Background="Gray" Height="550" Width="800" Loaded="Window_Loaded" Closed="Window_Closed" Icon="/Images/Horse.ico">
+        Title="Добро пожаловать на Ипподром" FontSize="14" Background="Gray" Height="550" Width="800" Loaded="Window_Loaded" Closing="Window_Closing" Icon="/Images/Horse.ico">
     <Grid>
         <TabControl Grid.ColumnSpan="2" Background="AliceBlue">
             <TabItem Width="100" Header="Игра">
