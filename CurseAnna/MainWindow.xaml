@@ -93,13 +93,13 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="1.5*" MaxHeight="150"/>
-                        <RowDefinition Height="2.5*" MaxHeight="200"/>
+                        <RowDefinition Height="1.5*" MaxHeight="90"/>
+                        <RowDefinition Height="2.5*" MaxHeight="150"/>
                         <RowDefinition Height="5*"/>
                         <RowDefinition Height="1*" MaxHeight="150"/>
                     </Grid.RowDefinitions>
 
-                    <GroupBox Header="Звук" MaxHeight="100" Margin="10,5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                    <GroupBox Header="Звук" MaxHeight="70" Margin="10,5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
                         <Slider x:Name="SVolume" Minimum="0" Maximum="100" Value="50" SelectionEnd="50" SelectionStart="0" IsMoveToPointEnabled="True" IsSnapToTickEnabled="True" TickFrequency="1" IsSelectionRangeEnabled="true" SmallChange="1" ValueChanged="SVolume_ValueChanged"/>
                     </GroupBox>
 

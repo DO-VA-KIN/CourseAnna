@@ -51,12 +51,12 @@ namespace CurseAnna
         public MainWindow()
         {
             InitializeComponent();
+            Timer.Tick += Timer_Tick;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Settings1 = new Settings();
-            Timer.Tick += Timer_Tick;
 
             Balance = Settings1.Values.Balance;
             TBBalance.Text = Balance.ToString();//вкладка настройки
@@ -230,6 +230,9 @@ namespace CurseAnna
             {
                 BtnPlay.Tag = 0;
                 BtnPlay.Content = "Играть";
+                Timer.Stop();
+                BHorses[TimerNum].Opacity = 1;
+                PBHorses[TimerNum].Opacity = 1;
                 BtnPlay.ToolTip = null;
                 CBBet.IsEnabled = true;
                 CBHorse.IsEnabled = true;
